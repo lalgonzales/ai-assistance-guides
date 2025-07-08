@@ -87,7 +87,71 @@ For all conventions, restrictions, and workflows that apply only to the developm
 ---
 
 
+
 ## About Tooling, Commits, and Changelog
+
+### Example: Version Bump Workflow (Best Practice)
+
+> **Recommended pattern:**
+> - All workflow step names, commit messages, and automation scripts MUST be in ENGLISH.
+> - Always install critical tools (e.g., Commitizen, cz plugins) explicitly in the workflow, not only from `pyproject.toml`, to ensure reproducibility and control.
+> - Avoid referencing non-existent branches (e.g., `master`) in workflows; always validate your branch structure first.
+> - Example (GitHub Actions, using uv and explicit plugin install):
+>
+> ```yaml
+> name: Automatic Version Bump with Commitizen
+> on:
+>   push:
+>     branches:
+>       - main
+> jobs:
+>   bump-version:
+>     runs-on: ubuntu-latest
+>     steps:
+>       - name: Checkout repository
+>         uses: actions/checkout@v4
+>         with:
+>           fetch-depth: 0
+>       - name: Set up Python
+>         uses: actions/setup-python@v5
+>         with:
+>           python-version: '3.12'
+>       - name: Install uv (optional)
+>         run: |
+>           pip install --upgrade pip uv
+>       - name: Install Commitizen and cz-changeup explicitly
+>         run: |
+>           pip install commitizen cz-changeup
+>       - name: Run version bump and create tag (Commitizen)
+>         run: |
+>           git config user.name "github-actions"
+>           git config user.email "github-actions@github.com"
+>           NEXT_TAG=$(cz bump --get-next 2>&1) || true
+>           if echo "$NEXT_TAG" | grep -q '\[NO_COMMITS_TO_BUMP\]'; then
+>             echo "::notice::No eligible commits for bump. Exiting successfully."
+>             exit 0
+>           fi
+>           NEXT_TAG="v$NEXT_TAG"
+>           git tag -d "$NEXT_TAG" || true
+>           cz bump --yes
+>       - name: Push changes and tags
+>         env:
+>           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+>         run: |
+>           git push origin HEAD:main
+>           git push origin --tags
+> ```
+
+### Example: Atomic Commit Planning and Grouping
+
+> **Recommended pattern:**
+> - ALWAYS run `git status` before staging or committing to review all changes.
+> - Group changes into atomic, logical commits (never use `git add .`).
+> - Example:
+>   1. Add and commit `.github/workflows/` with message: `chore(ci): add GitHub Actions workflow for version bump`
+>   2. Add and commit `project_guides/` with message: `docs(project): add project-specific development guide`
+> - Each commit MUST be clear, descriptive, and follow Conventional Commits.
+> - Justify the grouping in the plan or commit message if needed.
 
 For details on code quality tools, commit conventions, and changelog generation—including the use of Commitizen with plugins for full commit message extraction—refer to the [Code Quality & Refactoring Subguide](./CODE_QUALITY_SUBGUIDE.md). All technical decisions, justifications, and workflow improvements are documented there to keep this main guide lightweight and focused.
 - Use subguides and templates for details, examples, and best practices.
