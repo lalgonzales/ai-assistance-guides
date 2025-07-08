@@ -1,0 +1,35 @@
+# Conventional Commits Guide
+
+This document describes the Conventional Commits standard for commit messages. Use this guide to ensure clear, consistent, and automatable commit history in any project.
+
+## Commit Message Format
+```
+type(scope?): subject
+
+body (optional)
+
+footer (optional)
+```
+
+### Types
+- **feat**: A new feature
+- **fix**: A bug fix
+- **docs**: Documentation only changes
+- **style**: Changes that do not affect the meaning of the code (white-space, formatting, etc)
+- **refactor**: A code change that neither fixes a bug nor adds a feature
+- **test**: Adding or correcting tests
+- **chore**: Maintenance, build, or auxiliary tool changes
+
+### Examples
+```
+feat: add user authentication module
+fix: correct typo in error message
+chore: update dependencies
+```
+
+## Why Use Conventional Commits?
+- Enables automated changelogs
+- Improves collaboration and code review
+- Makes project history easier to understand
+
+> For more details, see https://www.conventionalcommits.org/en/v1.0.0/
