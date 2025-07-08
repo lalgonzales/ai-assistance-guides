@@ -9,16 +9,16 @@ This guide provides essential UV commands for Python project dependency manageme
 
 ## Basic Commands
 
-- `uv sync`  
+- `uv sync`
   Install all dependencies from `pyproject.toml` and `uv.lock`.
 
-- `uv add <package>`  
+- `uv add <package>`
   Add a new dependency and update lockfile.
 
-- `uv run <command>`  
+- `uv run <command>`
   Run a command inside the UV-managed environment.
 
-- `uv run pytest tests/ -v`  
+- `uv run pytest tests/ -v`
   Run all tests with verbose output.
 
 ## Example Workflow

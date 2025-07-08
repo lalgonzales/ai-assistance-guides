@@ -46,6 +46,9 @@
 
 - **Pre-commit & Tooling:**
   - Pre-commit hooks and code quality tools (e.g., linters, formatters) MUST be used to enforce standards automatically.
+  - Commitizen MUST be configured with a plugin (e.g., cz_changeup) that supports extracting both the commit title and description for changelogs, to ensure complete traceability and context in release notes.
+  - The [tool.commitizen.changeup] section in `pyproject.toml` MUST define all commit types and bump rules explicitly, to guarantee consistent versioning and changelog generation.
+  - All contributors MUST write commit messages with a clear title and an informative description, as both will be included in the changelog.
   - Additional tools (e.g., black, flake8, isort, mypy) MUST be integrated as needed.
 
 - **Documentation:**
@@ -64,6 +67,7 @@
 ---
 
 
+
 ## Workflow for Code Quality Jobs (Imperative)
 
 1. Review the relevant plan and this subguide before any code quality or refactor job.
@@ -72,8 +76,17 @@
 4. Validate all changes with tests and code quality tools before reporting completion.
 5. Update documentation and systematize new patterns if needed.
 6. The plan MUST be updated after each significant change; use sub-plans for large refactors.
+7. **MANDATORY COMMIT WORKFLOW:**
+   - ALWAYS run `git status` before staging or committing to review all changes.
+   - Decide how to group changes into atomic, clear, and policy-compliant commits. NEVER use `git add .` to stage everything at once.
+   - Stage and commit only validated, logically grouped changes with clear, descriptive commit messages (title and body), following the conventions in this subguide.
+   - Reference the main guide for further details and rationale.
 
 
 
-> **Note:** This subguide MUST be updated as new patterns, tools, or best practices are adopted.
+
+---
+
+> **Note:**
+> This subguide MUST be updated as new patterns, tools, or best practices are adopted. When a new tool or configuration (such as cz_changeup for Commitizen) is introduced to improve traceability or changelog quality, document the rationale and update this guide immediately. All improvements or lessons learned from workflow experience MUST be systematized here.
 

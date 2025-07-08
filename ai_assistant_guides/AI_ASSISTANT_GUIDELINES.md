@@ -1,3 +1,17 @@
+- For any conventions, restrictions, or workflows that are unique to this repository (not general-purpose), you MUST create a `project_guides/` directory at the root of the repository.
+- The main file for project-specific rules is `project_guides/PROJECT_DEVELOPMENT_GUIDE.md`.
+- This file MUST be versioned (not in `private/`) and referenced from this main guide.
+- Use this file to document:
+  - English-only policy for plans (if stricter than the general guide)
+  - Plan lifecycle and closure rules specific to the project
+  - Any exceptions, additional conventions, or local workflows
+- The `PROJECT_DEVELOPMENT_GUIDE.md` MUST include a reference to the repository and be kept in sync with the main guidelines.
+- If you start a new project or fork, create or update this file to reflect project-specific needs.
+- Always include the repository URL in the header of each project-specific guide for traceability:
+
+  Main repository: https://github.com/lalgonzales/ai-assistance-guides
+
+---
 ---
 
 # Development & AI Assistant Quick Reference Guide
@@ -23,7 +37,7 @@
 > - If there is any doubt, ALWAYS prefer ENGLISH for documentation and scripting, but SPANISH is acceptable for planning and interactive chat unless otherwise specified.
 > - If the user writes in Spanish in chat or planning, the assistant MAY reply in Spanish unless the user requests English or the context requires it.
 > - This rule is IMPERATIVE and OVERRIDES any other ambiguity. The assistant must always check and apply this policy before any output or file creation.
-> 
+>
 > **Examples:**
 > - Documentation file (`README.md`, `docs/`, code comments): ENGLISH ONLY
 > - Script or code: ENGLISH ONLY
@@ -57,13 +71,37 @@
 
 ---
 
-## Philosophy & Principles
 - All documentation, guides, and plans must be modular, actionable, and kept in sync with the codebase.
+
+---
+
+
+
+
+## Project-Specific Development Guide
+
+For all conventions, restrictions, and workflows that apply only to the development and maintenance of this repository—including the English-only policy for plans and the plan lifecycle—see [`project_guides/PROJECT_DEVELOPMENT_GUIDE.md`](../project_guides/PROJECT_DEVELOPMENT_GUIDE.md) (included in the repository for all contributors).
+
+---
+
+---
+
+
+## About Tooling, Commits, and Changelog
+
+For details on code quality tools, commit conventions, and changelog generation—including the use of Commitizen with plugins for full commit message extraction—refer to the [Code Quality & Refactoring Subguide](./CODE_QUALITY_SUBGUIDE.md). All technical decisions, justifications, and workflow improvements are documented there to keep this main guide lightweight and focused.
 - Use subguides and templates for details, examples, and best practices.
 - Always close plans with robust validation, documentation update, and systematization.
+- **All code changes MUST pass pre-commit hooks and code quality tools before being considered valid or complete.**
+- **If any pre-commit hook or code quality tool fails, the assistant MUST pause, report, and correct before proceeding.**
 - **AI Assistant responses and actions must always be guided by the current plan and this guide.**
-- **Evita generar documentación excesiva; prefiere sistematización y actualización de guías/plantillas.**
-- **Norma:** Antes de consultar al usuario, valida el plan y la guía, y termina el mensaje con: “¿Confirmas los siguientes pasos o ajustamos algo?”
+- **Avoid excessive documentation; prefer systematization and updating guides/templates.**
+- **MANDATORY COMMIT WORKFLOW:**
+  1. Before staging or committing, ALWAYS run `git status` to review all staged and unstaged changes.
+  2. Review and decide how to group changes into atomic, clear, and policy-compliant commits. NEVER use `git add .` to stage everything at once.
+  3. Stage and commit only validated, logically grouped changes with clear, descriptive commit messages (title and body), following the conventions in the [Code Quality & Refactoring Subguide](./CODE_QUALITY_SUBGUIDE.md).
+  4. If in doubt, consult the plan and guides before committing.
+- **Rule:** Before consulting the user, validate the plan and the guide, and end the message with: “Do you confirm the next steps or should we adjust something?”
 
 ---
 
@@ -147,7 +185,7 @@
 ---
 
 > **Logging Standard:** All detailed logs of debugging/testing cycles must go in a dedicated log file linked from the main plan. The main plan should only contain the checklist, conclusions, and links. See [PLAN_STRUCTURE_GUIDE.md](./PLAN_STRUCTURE_GUIDE.md#logging--plan-structure-standard-2025-07-06).
-> 
+>
 > For detailed examples, templates, and best practices, always refer to the linked subguides.
 
 ---

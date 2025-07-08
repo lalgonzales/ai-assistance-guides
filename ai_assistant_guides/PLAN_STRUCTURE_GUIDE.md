@@ -12,9 +12,9 @@ This guide defines the minimum structure, best practices, and actionable example
 
 1. **Title and Objective**
    - Clearly state the goal, scope, and context of the plan.
-2. **Checklist of Steps**
-   - List all actionable steps as checkboxes. Each step should be specific and verifiable.
-   - Add a **Progress** section at the top of the plan, summarizing which steps are complete and the current state. Update this section in every iteration.
+2. **Checklist & Progress**
+   - List all actionable steps as checkboxes in a single unified section at the top of the plan. Each step should be specific, verifiable, and reflect both progress and validation criteria.
+   - Avoid duplicating checklists or progress sections; keep a single, up-to-date list.
 3. **Validation & Testing**
    - Define how results will be validated (e.g., CLI commands, test suite, integration flows).
    - Include expected outputs or acceptance criteria.
@@ -38,14 +38,10 @@ This guide defines the minimum structure, best practices, and actionable example
 ## Objective
 Briefly describe the goal and scope.
 
-## Progress
+## Progress & Checklist
 - [x] Step 1 completed
 - [ ] Step 2 in progress
 - [ ] Step 3 pending
-
-## Checklist
-- [ ] Define objective and scope
-- [ ] List actionable steps
 - [ ] Validate with robust tests (CLI, flows, suite)
 - [ ] Update documentation and READMEs
 - [ ] Register new patterns/lessons
