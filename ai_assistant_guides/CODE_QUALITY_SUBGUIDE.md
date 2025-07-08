@@ -10,7 +10,7 @@
 
 ## Quick-Reference Checklist
 
-- [ ] All code, comments, and documentation MUST be in ENGLISH by default.
+- [ ] All code, comments, documentation, workflow step names, and commit messages MUST be in ENGLISH by default.
 - [ ] Functions/classes MUST have a single, well-defined responsibility.
 - [ ] Code MUST be modular, readable, and simple.
 - [ ] Repeated logic MUST be extracted into reusable functions/modules.
@@ -44,12 +44,14 @@
   - All critical logic MUST be covered by tests.
   - Tests MUST be added or updated when refactoring.
 
+
 - **Pre-commit & Tooling:**
   - Pre-commit hooks and code quality tools (e.g., linters, formatters) MUST be used to enforce standards automatically.
   - Commitizen MUST be configured with a plugin (e.g., cz_changeup) that supports extracting both the commit title and description for changelogs, to ensure complete traceability and context in release notes.
   - The [tool.commitizen.changeup] section in `pyproject.toml` MUST define all commit types and bump rules explicitly, to guarantee consistent versioning and changelog generation.
   - All contributors MUST write commit messages with a clear title and an informative description, as both will be included in the changelog.
   - Additional tools (e.g., black, flake8, isort, mypy) MUST be integrated as needed.
+  - For CI/CD jobs, ALWAYS install critical tools (e.g., Commitizen, cz plugins) explicitly in the workflow, not only from `pyproject.toml`, to ensure reproducibility and control.
 
 - **Documentation:**
   - Docstrings and README sections MUST be updated or added as needed.
@@ -80,6 +82,9 @@
    - ALWAYS run `git status` before staging or committing to review all changes.
    - Decide how to group changes into atomic, clear, and policy-compliant commits. NEVER use `git add .` to stage everything at once.
    - Stage and commit only validated, logically grouped changes with clear, descriptive commit messages (title and body), following the conventions in this subguide.
+   - Example:
+       - `chore(ci): add GitHub Actions workflow for version bump`
+       - `docs(project): add project-specific development guide`
    - Reference the main guide for further details and rationale.
 
 
