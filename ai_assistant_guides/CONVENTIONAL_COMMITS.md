@@ -1,4 +1,16 @@
+
 # Conventional Commits Guide
+
+## Commit Strategy (Best Practice)
+
+- **Commits should group logical blocks of work:** Avoid committing every micro-action. Instead, commit after completing a meaningful unit of work, such as a feature, fix, refactor, or documentation update.
+- **Group by type of modification:** If possible, separate unrelated changes (e.g., refactor vs. docs) into different commits.
+- **Commit at milestones or after relevant progress:** Update the plan and commit when you reach a milestone, finish a block of work, or complete a cleanup/archive.
+- **Use clear, conventional messages:** Always follow the format and types below for clarity and automation.
+
+This approach improves traceability, code review, and recovery, and is required for all contributors.
+
+---
 
 This document describes the Conventional Commits standard for commit messages. Use this guide to ensure clear, consistent, and automatable commit history in any project.
 

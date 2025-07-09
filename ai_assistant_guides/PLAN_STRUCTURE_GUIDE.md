@@ -4,7 +4,11 @@
 
 > **Note:** Whenever possible, update guides, templates, or systematization instead of creating new documentation. The assistant MUST always act according to the active plan and this guide, and should only propose new documentation if it is strictly necessary for traceability or team learning.
 
+
 This guide defines the minimum structure, best practices, and actionable examples for all planning documents in this project. All plans MUST be written in English and follow these standards to ensure clarity, traceability, and robust closure.
+
+> **For critical or long-lived plans:**
+> Always use or adapt the [PLAN_HANDOVER_TEMPLATE.md](./PLAN_HANDOVER_TEMPLATE.md) to ensure the plan is self-sufficient, recoverable, and ready for handover or asynchronous continuation.
 
 ---
 
@@ -30,44 +34,13 @@ This guide defines the minimum structure, best practices, and actionable example
 ---
 
 
-## Example Plan Template
 
-```
-# [Short Title]: [Objective]
+## Plan Template (Single Source of Truth)
 
-## Objective
-Briefly describe the goal and scope.
+> **All plans MUST use the [PLAN_HANDOVER_TEMPLATE.md](./PLAN_HANDOVER_TEMPLATE.md) as the canonical template.**
+> For simple plans, fill only the required sections; for critical/long-lived plans, complete all sections for robust handover and recovery.
 
-## Progress & Checklist
-- [x] Step 1 completed
-- [ ] Step 2 in progress
-- [ ] Step 3 pending
-- [ ] Validate with robust tests (CLI, flows, suite)
-- [ ] Update documentation and READMEs
-- [ ] Register new patterns/lessons
-- [ ] Propose improvements to guides/templates
-- [ ] Clean up and formally close the plan
-
-## Validation
-- [ ] Run CLI: `python scripts/smart_sync.py --dry-run`
-- [ ] Run test suite: `pytest`
-- [ ] Confirm expected output and no errors
-
-## Documentation
-- [ ] Update `README.md` and affected guides
-
-## Systematization
-- [ ] Add new patterns to `docs/sistematizacion/`
-
-## Closure Criteria
-- [ ] All checklist items complete
-- [ ] Evidence of validation attached
-- [ ] Plan formally closed and referenced in changelog
-
-## Traceability
-- Files modified: ...
-- Error logs: ...
-```
+This ensures every plan is self-sufficient, traceable, and easy to continue or close by any contributor. Do not create or use alternative templates.
 
 ---
 
@@ -101,6 +74,7 @@ Plans should be as independent and self-contained as possible, so any team membe
 
 ---
 
+
 ## Best Practices
 - Keep steps actionable and verifiable.
 - Update the plan as you learn or as requirements change.
@@ -110,10 +84,27 @@ Plans should be as independent and self-contained as possible, so any team membe
 
 ---
 
+## Plan Closure
+
+All plans must be formally closed following these steps:
+- Ensure all checklist items are complete and validated.
+- Attach or link all evidence (logs, outputs, screenshots, etc.).
+- Summarize key learnings and decisions.
+- Archive the plan if it has long-term value, or delete if not needed (see archiving policy).
+- Remove all temporary/intermediate files unless needed for traceability.
+- If minor tasks remain, create a mini-plan and close the main one.
+- Reference the [PLAN_HANDOVER_TEMPLATE.md](./PLAN_HANDOVER_TEMPLATE.md) for closure instructions and required sections.
+
+This ensures every plan is auditable, recoverable, and easy to continue or review by any contributor.
+
+---
+
+
 ## Relationship to Other Templates
 - Use this guide together with `PLANNING_TASK_TEMPLATE.md` for new plans.
 - Reference `VALIDATION_LOG_TEMPLATE.md` for documenting validation results.
 - For error handling, use `ERROR_HANDLING_ENTRY_TEMPLATE.md` and link logs in your plan.
+- For critical/long-lived plans or when handover is likely, use [PLAN_HANDOVER_TEMPLATE.md](./PLAN_HANDOVER_TEMPLATE.md) to ensure robust continuity and recovery.
 
 ---
 
