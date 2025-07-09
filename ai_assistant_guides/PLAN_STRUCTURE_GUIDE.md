@@ -10,6 +10,8 @@ This guide defines the minimum structure, best practices, and actionable example
 > **For critical or long-lived plans:**
 > Always use or adapt the [PLAN_HANDOVER_TEMPLATE.md](./PLAN_HANDOVER_TEMPLATE.md) to ensure the plan is self-sufficient, recoverable, and ready for handover or asynchronous continuation.
 
+> ⚠️ All plans MUST be created from the official [PLAN_HANDOVER_TEMPLATE.md](./PLAN_HANDOVER_TEMPLATE.md). It is FORBIDDEN to create plans without this structure. Any plan not following this template is INVALID and must be regularized immediately.
+
 ---
 
 ## Minimum Plan Structure
