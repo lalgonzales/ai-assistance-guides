@@ -1,15 +1,48 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
 [project]
 name = "ai-assistance-guides"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.1.2"
+description = "This repository contains guides for leveraging AI assistants to improve our work and development processes."
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    { name = "Luis Alfredo López Gonzales", email = "lalgonzales@gmail.com"}
+]
+maintainers = [
+    { name = "Luis Alfredo López Gonzales", email = "lalgonzales@gmail.com"}
+]
+license = "CC-BY-4.0"
+keywords = [
+    "ai",
+    "artificial intelligence",
+    "guides",
+    "assistance",
+    "development",
+    "processes"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Documentation",
+    "Private :: Do Not Upload"
+]
 dependencies = [
     "commitizen>=4.8.3",
     "cz-changeup>=1.1.2",
     "pre-commit>=4.2.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/lalgonzales/ai-assistance-guides"
+Repository = "https://github.com/lalgonzales/ai-assistance-guides"
+Issues = "https://github.com/lalgonzales/ai-assistance-guides/issues"
+Changelog = "https://github.com/lalgonzales/ai-assistance-guides/blob/main/CHANGELOG.md"
 
 [tool.commitizen]
 name = "cz_changeup"
@@ -18,7 +51,10 @@ version_scheme = "pep440"
 version = "0.1.2"
 update_changelog_on_bump = true
 major_version_zero = true
-version_files = []
+version_files = [
+    { path = "pyproject.toml", version_variable = "project.version" },
+    { path = "CHANGELOG.md", version_variable = "version" }
+]
 
 [tool.commitizen.changeup]
 types = [
