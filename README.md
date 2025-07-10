@@ -11,4 +11,7 @@ This repository contains guidelines, templates, and best practices for developme
 - `AI_ASSISTANT_GUIDELINES.md`: Main rules and policies
 - `CODE_QUALITY_SUBGUIDE.md`, `CONVENTIONAL_COMMITS.md`, etc.: Subguides and templates
 
-For more details, see each guide and the plan in `private/planning/`.
+
+## License
+This project is licensed under the Creative Commons Attribution 4.0 International License. See the official license and metadata in `pyproject.toml` for details on authors, maintainers, and terms.
+
