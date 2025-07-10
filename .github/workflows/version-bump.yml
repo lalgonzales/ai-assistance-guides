@@ -1,5 +1,7 @@
 name: Automatic Version Bump with Commitizen
 
+permissions:
+  contents: write
 
 on:
   push:
