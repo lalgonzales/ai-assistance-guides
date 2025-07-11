@@ -1,3 +1,8 @@
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
+
+- This template is only for documenting systematization in development projects for the AI Assistant.
+- For general assistant logic, always refer to the entrypoint first.
 
 # Systematization Template for Development Projects
 
@@ -50,6 +55,13 @@ Responsible: <name>
 - Example: `scripts/smart_sync.py`, `private/planning/`, `docs/ai_assistant_guides/`
 
 ---
+
+## 🚨 MANDATORY ACTION
+Upon completing a systematization log:
+1. Save the completed log in `private/systematization_logs/`.
+2. Add a link to the log in the corresponding plan or log document.
+
+These steps are required for traceability and compliance with project standards.
 
 
 > Adapt and expand this template as needed for your project, but DO NOT remove the imperative language or the autonomy, naming, and validation policies. Use it as a base to systematize and transfer knowledge in development teams.

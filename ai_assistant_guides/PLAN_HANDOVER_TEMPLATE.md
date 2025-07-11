@@ -1,49 +1,62 @@
-
 # [Plan Title]: [Objective]
 
----
+**Plan metadata:**
+- **Title:** [Plan Title]
+- **Created:** [YYYY-MM-DD]
+- **Last updated:** [YYYY-MM-DD]
+- **Status:** [draft/in progress/completed]
 
-## Plan Handover & Recovery Policy (Embedded)
-> **All plans must be discoverable from the main entrypoint ([AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md)).**
-> Always link back to the main entry and relevant subguides to ensure traceability and prevent orphaned documentation.
->
-> _This is the **only** plan template. Do not use or maintain alternative templates or structures._
+## 🚦 MANDATORY ENTRYPOINT
+All plans and actions must follow [AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md).
 
-Every plan must be self-sufficient: it should contain all the information, context, and references needed for any contributor (even if new or after data loss) to continue, validate, or close the work without ambiguity.
-
-**Requirements for a Self-Sufficient Plan:**
-- Clear objective and context.
-- Up-to-date checklist of pending and completed steps.
-- Explicit references to all relevant guides, files, and evidence.
-- Documentation of all key decisions and validations.
-- Section: "How to continue if you are new to this plan".
-- Links to all artifacts, logs, and supporting material.
-- Clear next steps and closure instructions.
-- Current status (in progress, blocked, ready to archive, etc.).
-
-**Policy:**
-- A plan cannot be closed or archived unless it is self-sufficient and all evidence is present.
-- If a plan is found incomplete or unclear after sync or handover, regularize and update it before proceeding.
-- Always update the "handover" section before leaving a plan unfinished or transferring responsibility.
-
-_This policy ensures continuity, traceability, and resilience for distributed or asynchronous work._
+## ⚠️ PLAN STRUCTURE
+For structure and logic, see [PLAN_STRUCTURE_GUIDE_v2.md](./PLAN_STRUCTURE_GUIDE_v2.md).
 
 ---
+
+## 🚦 PRINCIPLES FOR ALL PLANS
+- Every plan MUST:
+  - Follow a clear, structured route using the official template.
+  - Remain clean: only the table and essential context, all evidence/logs linked from the table.
+  - Be aligned with defined objectives and actionable steps.
+  - Be updated as work progresses or requirements change.
+  - Ensure full traceability: all outputs, logs, and decisions must be accessible and referenced.
+  - Be formally closed with summary and links to evidence.
+  - Use safe commit practices: review changes with `git status`, stage only relevant files, and use descriptive commit messages. See [CODE_QUALITY_SUBGUIDE.md](./CODE_QUALITY_SUBGUIDE.md#mandatory-commit-workflow) for details.
 
 ## Objective & Context
 Briefly describe the goal, scope, and any relevant background.
 
-## Checklist & Progress
-- [ ] List all actionable steps, validations, and pending items here.
-- [ ] ...
+## Checklist & Progress (Table-Based)
 
-## Key Decisions & Evidence
-- Document all important decisions, validations, and attach evidence (logs, screenshots, outputs, etc.).
+### Status legend (recommended values):
+- ⏳ Pending: Not started yet
+- 🔄 In progress: Being worked on
+- 🟡 Action required: Needs a decision or integration, but does not block the rest of the plan
+- ✅ Completed: Finished and validated
+- 🛑 Blocked: Cannot proceed until an external issue is resolved
+- ❌ Cancelled: Step was discarded or is no longer relevant
+- 📝 Observation: For incidentals or findings that do not require direct action
+
+Use the status that best reflects the situation. Prefer "🟡 Action required" for steps that need a decision or integration but do not block the rest of the plan. Use "🛑 Blocked" only for steps that truly prevent further progress.
+
+| Step | Description | Status | Notes | Related |
+|------|-------------|--------|-------|---------|
+| 1 | Define objective and scope |  |  |  |
+| 2 | List main actions |  |  |  |
+| 3 | Validate results and document evidence |  |  |  |
+| A | Additional findings |  | For discoveries outside the main flow |  |
+
+- Number main steps (1, 2, 3, ...). Use letters (A, B, ...) for incidentals or transversal findings.
+- All evidence, discussions, or detailed logs MUST be saved in the appropriate folder (e.g., `private/plan_logs/`, `private/error_logs/`, etc.) and linked from the table for traceability.
+- This is a **MANDATORY ACTION** for plan compliance.
+- Keep the plan clean and focused.
 
 ## References
-- [AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md) — **MANDATORY ENTRYPOINT: All plans and actions must follow this guide.**
-- [README.md](./README.md) — Main folder overview and navigation.
-- [Relevant subguides] (e.g., [PLAN_STRUCTURE_GUIDE.md](./PLAN_STRUCTURE_GUIDE.md), [VALIDATION_POLICY_GUIDE.md](./VALIDATION_POLICY_GUIDE.md))
+- [AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md) — **MANDATORY ENTRYPOINT**
+- [PLAN_STRUCTURE_GUIDE_v2.md](./PLAN_STRUCTURE_GUIDE_v2.md) — **PLAN STRUCTURE & LOGIC**
+- [VALIDATION_LOG_TEMPLATE.md](./VALIDATION_LOG_TEMPLATE.md) — Optional, for validation logs.
+- [ERROR_HANDLING_ENTRY_TEMPLATE.md](./ERROR_HANDLING_ENTRY_TEMPLATE.md) — Optional, for error handling logs.
 - [Related files, plans, or artifacts]
 
 ## How to Continue if You Are New to This Plan
@@ -52,9 +65,6 @@ Briefly describe the goal, scope, and any relevant background.
 - What should be validated before proceeding?
 - Where is the evidence or context?
 - Who to contact if blocked?
-
-## Next Steps
-- [ ] List the immediate next actions required to advance or close the plan.
 
 ## Closure & Archiving Instructions
 - How to validate closure?

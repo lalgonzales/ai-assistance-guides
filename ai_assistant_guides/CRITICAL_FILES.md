@@ -1,3 +1,9 @@
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
+
+- This guide is only for the registry and protection of critical files in the AI Assistant project.
+- For general assistant logic, always refer to the entrypoint first.
+
 # Critical Files Registry (ARCHIVOS_CRITICOS.md)
 
 This file IMPERATIVELY lists all files and directories that MUST NEVER be deleted, emptied, or modified without explicit justification, validation, and plan update. The AI Assistant and all collaborators MUST consult this registry before any destructive or high-impact file operation.

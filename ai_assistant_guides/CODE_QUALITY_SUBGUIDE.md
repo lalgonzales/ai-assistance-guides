@@ -1,5 +1,8 @@
----
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
 
+This guide is only for code quality and refactoring rules for the AI Assistant project.
+For general assistant logic, always refer to the entrypoint first.
 
 # Code Quality & Refactoring Subguide for AI Assistant
 
@@ -87,11 +90,15 @@
        - `docs(project): add project-specific development guide`
    - Reference the main guide for further details and rationale.
 
+## Commit Workflow and Grouping
+- Before executing any commit, review changes with `git status` and group only relevant files.
+- Document the file groups and proposed commit messages in the plan and corresponding log.
+- This ensures traceability, auditability, and compliance with project standards.
 
+## Bidirectional Traceability Policy
+- Any log or artifact generated during a code quality job must link back to the originating plan/log, and the plan/log must register the link to the artifact.
+- This guarantees traceability, reviewability, and compliance with project standards.
 
-
----
-
-> **Note:**
-> This subguide MUST be updated as new patterns, tools, or best practices are adopted. When a new tool or configuration (such as cz_changeup for Commitizen) is introduced to improve traceability or changelog quality, document the rationale and update this guide immediately. All improvements or lessons learned from workflow experience MUST be systematized here.
+**Example:**
+- In the log: “This log is linked to the plan step X. Artifact generated: [artifact.md](../path/artifact.md)”)
 

@@ -1,5 +1,10 @@
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
 
 # Conventional Commits Guide
+
+This guide is only for commit message standards and strategy for the AI Assistant project.
+For general assistant logic, always refer to the entrypoint first.
 
 ## Commit Strategy (Best Practice)
 
@@ -45,3 +50,7 @@ chore: update dependencies
 - Makes project history easier to understand
 
 > For more details, see https://www.conventionalcommits.org/en/v1.0.0/
+
+## Commit Documentation Requirement
+- As part of the conventional commit workflow, document the file groups and proposed commit messages in the plan and related logs before executing the commit.
+- This step is mandatory for traceability and review.

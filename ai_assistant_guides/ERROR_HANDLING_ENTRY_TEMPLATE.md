@@ -1,3 +1,11 @@
+
+
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
+
+- This template is only for documenting error handling events in the AI Assistant project.
+- For general assistant logic, always refer to the entrypoint first.
+
 # Error Handling Entry Template
 
 You MUST use this template to document all error handling events or incidents. Complete each section for every error encountered during development, testing, or production.
@@ -23,4 +31,8 @@ You MUST use this template to document all error handling events or incidents. C
 ## Additional Comments
 - _(Any other relevant information)_
 
-> Store completed error handling entries in the appropriate project-specific documentation area (e.g., `private/error_logs/` or as referenced in the plan).
+
+---
+
+**Action:**
+When you complete this template, save the file in `private/error_logs/` and link it in the corresponding plan step or log for full traceability.
