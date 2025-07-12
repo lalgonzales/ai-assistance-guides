@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ai-assistance-guides"
-version = "0.1.2"
+version = "0.1.3"
 description = "This repository contains guides for leveraging AI assistants to improve our work and development processes."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -48,7 +48,7 @@ Changelog = "https://github.com/lalgonzales/ai-assistance-guides/blob/main/CHANG
 name = "cz_changeup"
 tag_format = "v$version"
 version_scheme = "pep440"
-version = "0.1.2"
+version = "0.1.3"
 update_changelog_on_bump = true
 major_version_zero = true
 version_files = [

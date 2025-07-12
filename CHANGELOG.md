@@ -1,3 +1,13 @@
+## v0.1.3 (2025-07-12)
+
+### Fix
+
+- pyproject: correct commitizen version_files format for proper version bumping
+
+### Refactor
+
+- squash commit for refactor/ai-guidelines branch; correct type for version bump and changelog update
+
 ## v0.1.2 (2025-07-09)
 
 ### Perf
