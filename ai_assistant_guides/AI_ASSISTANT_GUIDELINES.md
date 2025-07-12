@@ -5,7 +5,7 @@
 
 ## 🚦 EntryPoint: Critical Rules Checklist
 
-**All actions must follow this entrypoint before consulting subguides or executing.**
+**This guide is the mandatory entrypoint and central reference for all documentation. It must not contain operational instructions or workflows. All actionable content is in the subguides listed below.**
 
 ### 1. Critical Rules Checklist
 - [ ] Language: All documentation, code, and scripts in ENGLISH. Plans and chat may be in SPANISH (user preference).
@@ -36,7 +36,8 @@
 
 ---
 
-**All examples, edge cases, or extended explanations are in the subguides. If in doubt, consult the relevant subguide.**
+## ⚠️ Policy: No Operational Instructions
+> This main guide (AI_ASSISTANT_GUIDELINES.md) must not contain operational instructions, workflows, or detailed examples. Its sole purpose is to serve as the mandatory entrypoint and reference. All actionable content must be placed in the appropriate subguides.
 
----
-// ...end of content: all other details have been moved to subguides and references...
+### Validation Rule
+- Any edit to this guide must be justified in the plan and linked to a documented improvement or refactor. Unjustified edits should be flagged and reverted.

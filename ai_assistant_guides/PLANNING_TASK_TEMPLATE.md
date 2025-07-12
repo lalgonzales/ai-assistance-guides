@@ -37,3 +37,10 @@ You MUST use this template for any new task or workflow plan in `private/plannin
 ---
 
 > Copy this template to `private/planning/` and fill it out for each new task. Update all sections as the work progresses and closes.
+
+## 🚨 MANDATORY ACTION
+Upon completing a planning task log:
+1. Save the completed log in `private/planning/`.
+2. Add a link to the log in the corresponding plan or log document.
+
+These steps are required for traceability and compliance with project standards.

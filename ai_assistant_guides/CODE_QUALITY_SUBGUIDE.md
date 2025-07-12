@@ -1,5 +1,8 @@
----
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
 
+This guide is only for code quality and refactoring rules for the AI Assistant project.
+For general assistant logic, always refer to the entrypoint first.
 
 # Code Quality & Refactoring Subguide for AI Assistant
 
@@ -52,6 +55,7 @@
   - All contributors MUST write commit messages with a clear title and an informative description, as both will be included in the changelog.
   - Additional tools (e.g., black, flake8, isort, mypy) MUST be integrated as needed.
   - For CI/CD jobs, ALWAYS install critical tools (e.g., Commitizen, cz plugins) explicitly in the workflow, not only from `pyproject.toml`, to ensure reproducibility and control.
+  - **ALWAYS run `git status` before staging or committing to review all changes and confirm only relevant files are included. This applies to both plan-based and autonomous actions.**
 
 - **Documentation:**
   - Docstrings and README sections MUST be updated or added as needed.
@@ -87,11 +91,15 @@
        - `docs(project): add project-specific development guide`
    - Reference the main guide for further details and rationale.
 
+## Commit Workflow and Grouping
+- Before executing any commit, review changes with `git status` and group only relevant files.
+- Document the file groups and proposed commit messages in the plan and corresponding log.
+- This ensures traceability, auditability, and compliance with project standards.
 
+## Bidirectional Traceability Policy
+- Any log or artifact generated during a code quality job must link back to the originating plan/log, and the plan/log must register the link to the artifact.
+- This guarantees traceability, reviewability, and compliance with project standards.
 
-
----
-
-> **Note:**
-> This subguide MUST be updated as new patterns, tools, or best practices are adopted. When a new tool or configuration (such as cz_changeup for Commitizen) is introduced to improve traceability or changelog quality, document the rationale and update this guide immediately. All improvements or lessons learned from workflow experience MUST be systematized here.
+**Example:**
+- In the log: “This log is linked to the plan step X. Artifact generated: [artifact.md](../path/artifact.md)”)
 

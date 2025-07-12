@@ -21,3 +21,10 @@ Responsible: <name>
 ```
 
 > Store completed validation logs in the appropriate project-specific documentation area (e.g., `private/validation_logs/` or as referenced in the plan).
+
+## 🚨 MANDATORY ACTION
+Upon completing a validation log:
+1. Save the completed log in `private/validation_logs/`.
+2. Add a link to the log in the corresponding plan or log document.
+
+These steps are required for traceability and compliance with project standards.

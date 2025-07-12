@@ -1,17 +1,23 @@
-# Project Guides Policy
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
 
-## General Principle
+- This guide is only for defining the standard and policies for the creation and maintenance of project-specific guides.
+- For general assistant logic, always refer to the entrypoint first.
 
-- The main AI guide and templates are designed to be general, portable, and must NOT be contaminated with project-specific rules, workflows, or files.
-- Any project-specific rule, workflow, or archive policy MUST be documented in a separate `project_guides/` folder, never in the main guide.
-- This ensures that the core guide remains clean, portable, and easy to update as a submodule in other repositories.
+# PROJECT_GUIDES_POLICY.md
 
-## How to Use
+## Purpose
+Define the standard and policies for the creation and maintenance of project-specific guides.
 
-- If your project requires local rules, exceptions, or workflows not covered by the general guide, document them in `project_guides/`.
-- Never modify the main guide or templates for project-specific needs; always extend via `project_guides/`.
-- Reference this policy in your project-specific guides as needed.
+## Policy for Project-Specific Guides
 
----
+> **Specific Project Guides**
+>
+> In most cases, the main AI_ASSISTANT_GUIDELINES.md is sufficient for general workflows and policies. However, if your project has unique needs, rules, or instructions not covered there, consider creating or reviewing a project-specific development guide. Only create such a guide if truly necessary; avoid duplicating information already present in the main guide.
+>
+> **Standard for all project-specific guides:**
+> Every project-specific guide must include the following note at the top:
+>
+>     For general situations or cases not covered by this project-specific guide, refer to the main AI_ASSISTANT_GUIDELINES.md. Use this guide only for instructions or policies unique to this project.
 
-_This file defines the policy for separating general and project-specific logic when using the AI guide as a base or submodule._
+

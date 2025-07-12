@@ -1,0 +1,76 @@
+# Guide Logic Test Template
+
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md).**
+
+- This template is only for logic and functionality testing of guides and templates.
+- For general assistant logic, always refer to the entrypoint first.
+
+> ⚠️ This template is only valid when used together with the corresponding guide: [NAME_OF_GUIDE](./NAME_OF_GUIDE.md)
+
+---
+
+## MANDATORY SECTIONS REFERENCE
+
+Centralized reference for mandatory sections required in guides and templates. Use these for validation and copy-paste when creating or editing documentation.
+
+### For GUIDES: MANDATORY ENTRYPOINT
+```
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
+
+- This guide is only for [briefly state the specific purpose of the guide].
+- For general assistant logic, always refer to the entrypoint first.
+```
+
+### For TEMPLATES: MANDATORY LINK
+```
+> ⚠️ This template is only valid when used together with the corresponding guide: [NAME_OF_GUIDE](../ai_assistant_guides/NAME_OF_GUIDE.md)
+```
+
+---
+
+## Purpose
+Document and execute logic test cases to validate the functionality, clarity, and robustness of project guides and templates. Identify weaknesses, ambiguities, and improvement opportunities.
+
+## Test Execution Steps
+1. Select a test case from the table.
+2. Execute each step as described in the scenario.
+3. Document the expected and actual results. If results differ, record the weakness and an improvement proposal.
+4. Link evidence, logs, or files in the table for traceability.
+5. Repeat for each test case.
+6. Review and ensure all cases are executed and documented.
+7. Link this file in the plan and closure log.
+
+## Test Case Structure
+| Case | Guide/Template | Scenario | Action | Expected Result | Actual Result | Detected Weakness | Improvement Proposal | Status |
+|------|---------------|----------|--------|-----------------|---------------|-------------------|---------------------|--------|
+| 1 | All guides and templates | Validate internal links and navigation | Review all internal and external links; report and fix broken links | All links work correctly; smooth navigation. |  |  |  | ⏳ Pending |
+| 2 | All guides and templates | Validation of MANDATORY ENTRYPOINT section | Verify that all guides/templates include the mandatory section and it is customized | All guides/templates comply with the mandatory and customized section. |  |  |  | ⏳ Pending |
+| 3 | Any guide/template | Edit and safe versioning test | Edit a guide/template, commit following the workflow, and validate history | Changes are versioned correctly, history and traceability ensured. |  |  |  | ⏳ Pending |
+| 4 | ERROR_HANDLING_ENTRY_TEMPLATE.md | Error log and validation test | Create an error log using the template, link it in the plan, and validate traceability | Error log created, linked, and accessible from the plan. |  |  |  | ⏳ Pending |
+| 5 | PLAN_HANDOVER_TEMPLATE.md and plan.md | Plan closure and archiving test | Simulate plan closure, archive/delete temporary files, and validate documentation | Documentation and links comply with closure and archiving policy. |  |  |  | ⏳ Pending |
+| 6 | PLAN_HANDOVER_TEMPLATE.md | Create a new plan using the template | Complete all fields and steps | The plan is clear, traceable, and aligned with principles. |  |  |  | ⏳ Pending |
+| 7 | ARTIFACT_LOCATION_GUIDE.md | Save a log in `private/` and verify policy | Try to sync the file, check with `.gitignore` and `git status --short | grep private/` | The file should not be versioned or uploaded to git. |  |  |  | ⏳ Pending |
+| 8 | CODE_QUALITY_SUBGUIDE.md | Commit following the workflow | Use `git status --short` to review changes, group relevant files, and record a descriptive message | Only relevant files are versioned, clear message. |  |  |  | ⏳ Pending |
+| 9 | AI_ASSISTANT_GUIDELINES.md | Consult the entrypoint before executing a critical action | Follow the checklist and consult subguide | Action validated and documented correctly. |  |  |  | ⏳ Pending |
+| 10 | PLAN_STRUCTURE_GUIDE.md | Close a plan and record evidence | Link all logs and outputs in the table | Complete navigation and traceability. |  |  |  | ⏳ Pending |
+
+## Status Legend
+- ⏳ Pending: Not started yet
+- 🔄 In progress: Being worked on
+- ✅ Completed: Finished and validated
+- 🛑 Blocked: Cannot proceed until an external issue is resolved
+- ❌ Cancelled: Step was discarded or is no longer relevant
+- 📝 Observation: For incidentals or findings that do not require direct action
+
+## Notes
+- Add new cases as scenarios or findings arise.
+- Document any detected weakness and improvement proposal.
+- Update the status and result of each case to maintain traceability.
+
+---
+
+> This template was generated by [step4_proposals_log.md](../private/plan_refactor_ai_guidelines_2025-07/step4_proposals_log.md) as part of the documented plan workflow.
+
+_This template ensures every guide logic test is traceable, actionable, and easy to continue or close by any contributor._
