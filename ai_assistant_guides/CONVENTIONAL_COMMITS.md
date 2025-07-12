@@ -54,3 +54,4 @@ chore: update dependencies
 ## Commit Documentation Requirement
 - As part of the conventional commit workflow, document the file groups and proposed commit messages in the plan and related logs before executing the commit.
 - This step is mandatory for traceability and review.
+- **ALWAYS run `git status` before staging or committing to review all changes and confirm only relevant files are included. This applies to both plan-based and autonomous actions.**

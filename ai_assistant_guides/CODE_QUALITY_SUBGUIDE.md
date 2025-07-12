@@ -55,6 +55,7 @@ For general assistant logic, always refer to the entrypoint first.
   - All contributors MUST write commit messages with a clear title and an informative description, as both will be included in the changelog.
   - Additional tools (e.g., black, flake8, isort, mypy) MUST be integrated as needed.
   - For CI/CD jobs, ALWAYS install critical tools (e.g., Commitizen, cz plugins) explicitly in the workflow, not only from `pyproject.toml`, to ensure reproducibility and control.
+  - **ALWAYS run `git status` before staging or committing to review all changes and confirm only relevant files are included. This applies to both plan-based and autonomous actions.**
 
 - **Documentation:**
   - Docstrings and README sections MUST be updated or added as needed.

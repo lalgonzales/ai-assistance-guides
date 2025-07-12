@@ -70,6 +70,8 @@ Use the status that best reflects the situation. Prefer "🟡 Action required" f
 - How to validate closure?
 - Where to archive the plan if relevant?
 - What temporary files/artifacts must be deleted?
+- **Mandatory: Before archiving, verify that all permanent documentation and artifacts are written in ENGLISH, as required by LANGUAGE_POLICY_GUIDE.md. Translate any Spanish content before final closure.**
+- **Mandatory: Before any commit (closure, archive, or autonomous action), ALWAYS run `git status` to review and confirm only relevant files are staged.**
 
 ## Status
 - [ ] In progress
