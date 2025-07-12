@@ -52,8 +52,7 @@ version = "0.1.2"
 update_changelog_on_bump = true
 major_version_zero = true
 version_files = [
-    { path = "pyproject.toml", version_variable = "project.version" },
-    { path = "CHANGELOG.md", version_variable = "version" }
+    "pyproject.toml"
 ]
 
 [tool.commitizen.changeup]
