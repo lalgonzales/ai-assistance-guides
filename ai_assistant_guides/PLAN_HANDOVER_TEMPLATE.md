@@ -72,6 +72,7 @@ Use the status that best reflects the situation. Prefer "🟡 Action required" f
 - What temporary files/artifacts must be deleted?
 - **Mandatory: Before archiving, verify that all permanent documentation and artifacts are written in ENGLISH, as required by LANGUAGE_POLICY_GUIDE.md. Translate any Spanish content before final closure.**
 - **Mandatory: Before any commit (closure, archive, or autonomous action), ALWAYS run `git status` to review and confirm only relevant files are staged.**
+- **Mandatory: After deleting all temporary files, also remove any empty folders associated with closed plans in `private/`, leaving only `planning/` and other active folders as needed.**
 
 ## Status
 - [ ] In progress

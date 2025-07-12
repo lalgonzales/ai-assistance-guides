@@ -51,6 +51,7 @@ All plans must be formally closed following these steps:
 - Summarize key learnings and decisions.
 - **Verify that all permanent documentation and artifacts are written in ENGLISH, as required by the LANGUAGE_POLICY_GUIDE.md. Plans or files in Spanish must be translated before archiving.**
 - **Before any commit (closure, archive, or autonomous action), ALWAYS run `git status` to review and confirm only relevant files are staged.**
+- **After deleting all temporary files, also remove any empty folders associated with closed plans in `private/`, leaving only `planning/` and other active folders as needed.**
 - Archive the plan if it has long-term value, or delete if not needed (see archiving policy).
 - Remove all temporary/intermediate files unless needed for traceability.
 - If minor tasks remain, create a mini-plan and close the main one.
