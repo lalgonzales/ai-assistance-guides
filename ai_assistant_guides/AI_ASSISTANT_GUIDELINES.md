@@ -23,9 +23,9 @@
 
 ### 3. Subguides and References
 - [Language Policy](./LANGUAGE_POLICY_GUIDE.md)
-- [Critical Operation Validation](./VALIDATION_POLICY_GUIDE.md)
+ - [Validation Log Template](./VALIDATION_LOG_TEMPLATE.md)
 - [Autonomy & Confirmation](./AUTONOMY_POLICY_GUIDE.md)
-- [Plan Closure & Validation](./PLAN_CLOSURE_GUIDE.md)
+ - [Plan Structure Guide](./PLAN_STRUCTURE_GUIDE.md)
 - [Artifact Location](./ARTIFACT_LOCATION_GUIDE.md)
 - [Plan Structure](./PLAN_STRUCTURE_GUIDE.md)
 - [Commit Conventions](./CONVENTIONAL_COMMITS.md)

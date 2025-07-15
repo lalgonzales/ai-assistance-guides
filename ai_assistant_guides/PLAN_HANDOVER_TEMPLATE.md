@@ -1,5 +1,7 @@
 # [Plan Title]: [Objective]
 
+> **Edit history:** All normative changes to this template are documented in its [Plan Handover Template Edits Registry](../registry/plan_handover_template/edits_registry_plan_handover.md).
+
 **Plan metadata:**
 - **Title:** [Plan Title]
 - **Created:** [YYYY-MM-DD]
@@ -10,7 +12,7 @@
 All plans and actions must follow [AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md).
 
 ## ⚠️ PLAN STRUCTURE
-For structure and logic, see [PLAN_STRUCTURE_GUIDE_v2.md](./PLAN_STRUCTURE_GUIDE_v2.md).
+For structure and logic, see [PLAN_STRUCTURE_GUIDE.md](./PLAN_STRUCTURE_GUIDE.md).
 
 ---
 
@@ -54,7 +56,7 @@ Use the status that best reflects the situation. Prefer "🟡 Action required" f
 
 ## References
 - [AI_ASSISTANT_GUIDELINES.md](./AI_ASSISTANT_GUIDELINES.md) — **MANDATORY ENTRYPOINT**
-- [PLAN_STRUCTURE_GUIDE_v2.md](./PLAN_STRUCTURE_GUIDE_v2.md) — **PLAN STRUCTURE & LOGIC**
+- [PLAN_STRUCTURE_GUIDE.md](./PLAN_STRUCTURE_GUIDE.md) — **PLAN STRUCTURE & LOGIC**
 - [VALIDATION_LOG_TEMPLATE.md](./VALIDATION_LOG_TEMPLATE.md) — Optional, for validation logs.
 - [ERROR_HANDLING_ENTRY_TEMPLATE.md](./ERROR_HANDLING_ENTRY_TEMPLATE.md) — Optional, for error handling logs.
 - [Related files, plans, or artifacts]
