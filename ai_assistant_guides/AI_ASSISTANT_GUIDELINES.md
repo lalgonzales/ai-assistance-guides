@@ -33,6 +33,7 @@
 - [Error Handling](./ERROR_HANDLING_ENTRY_TEMPLATE.md)
 - [Project Guides Policy](./PROJECT_GUIDES_POLICY.md)
   _Policy for separating general and project-specific rules and guides._
+- [UV Commands Guide](./UV_COMMANDS_GUIDE.md)
 
 ---
 
@@ -41,3 +42,8 @@
 
 ### Validation Rule
 - Any edit to this guide must be justified in the plan and linked to a documented improvement or refactor. Unjustified edits should be flagged and reverted.
+
+## 🚦 MANDATORY ENTRYPOINT
+**All planning, logic, and critical rules start from [AI_ASSISTANT_GUIDELINES.md](../ai_assistant_guides/AI_ASSISTANT_GUIDELINES.md).**
+
+> **Edit registry:** See [registry/entrypoint/edits_registry.md](../registry/entrypoint/edits_registry.md) for a complete log of all changes to this guide.
